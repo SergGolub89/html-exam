@@ -1,0 +1,67 @@
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.people {
+	display: grid;
+	grid-template-columns: repeat(4, 200px);
+	justify-content: center;
+	grid-gap: 71px 30px;
+	margin-top: 30px;
+}
+
+.person {
+	display: block;
+	position: relative;
+}
+
+.photo {
+	margin: 0 auto;
+}
+
+.image {
+	height: 200px;
+	border-radius: 100px;
+}
+
+.details {
+	text-align: center;
+	margin-top: 6px;
+}
+
+.rank {
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+	position: absolute;
+	top: 84px;
+	left: 158px;
+	font-size: 16px;
+	line-height: 32px;
+	text-align: center;
+	background: #ffffff;
+	color: #8B0000;
+}
+
+.extra {
+	font-size: 18px;
+	line-height: 21px;
+	color: white;
+	margin-top: 9px;
+}
+
+.name {
+	font-size: 20px;
+	line-height: 23px;
+	color: #2f4f4f;
+}
+
+.person:hover .extra {
+	color: #000000;
+}
+
+.person:hover { 
+	background: #eeeeee;
+	border-radius: 10px;
+}
