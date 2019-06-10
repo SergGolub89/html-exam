@@ -13,7 +13,8 @@ body {
 
 .person {
 	display: block;
-	position: relative;
+  position: relative;
+  transition: width 1s, height 1s;
 }
 
 .photo {
@@ -21,8 +22,10 @@ body {
 }
 
 .image {
+	width: 200px;
 	height: 200px;
-	border-radius: 100px;
+  border-radius: 100px;
+  transition: 1s;
 }
 
 .details {
@@ -63,5 +66,16 @@ body {
 
 .person:hover { 
 	background: #eeeeee;
-	border-radius: 10px;
+  border-radius: 10px;
+  transform: scale(1.2, 1.2);
+}
+
+.person:hover .image {
+  border-radius: 60px;
+}
+
+@media (max-width: 999px) {
+  .people {
+    grid-template-columns: repeat(2, 200px);
+  }
 }
